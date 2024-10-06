@@ -1,0 +1,170 @@
+* {
+    padding: 0%;
+    margin: 0%;
+
+}
+header {
+    background-color: brown;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+h1 {
+    color: gold;
+}
+h4 {
+    color: transparent;
+}
+header ul {
+    position: absolute;
+    right: 0vw;
+    top: 0;
+    line-height: 80px;
+}
+h1 {
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 80px;
+    background-image: url(images/logo_64x64.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    width: -500px;
+    text-indent: 80px;
+}
+h4 {
+    position: absolute;
+    left: 120px;
+    top: 2px;
+    line-height: 80px;
+    background-image: url(images/BA_133x83.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    width: -500ppx;
+    text-indent: 80px;
+}
+h4 {
+    display: none;
+}
+header li {
+    display: inline;
+    margin-right: 4vw;
+}
+header a {
+    color: gold;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+.学校校训 {
+    background-color: antiquewhite;
+    color: white;
+    height: 95vh;
+    background-image: url(images/2_1920x1080.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.学校校训 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.学校校训 h2 {
+    font-size: 60px;
+    margin-top: 60px;
+}
+.学校校训 p {
+    color: #FEF7E6;
+    font-size: 18px;
+    margin: 25px 0;
+}
+.学校校训 a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #ACACAC;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+footer {
+    background-color: black;
+    color: #b7b7b7;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.学校简介 {
+    display: flex;
+}
+.学校简介 img {
+    width: 50%;
+}
+.学校简介区块 {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.学校简介区块 h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.学校简介区块 p {
+    text-align: center;
+    line-height: 2em;
+}
+.菜单 {
+    display: none;
+}
+/* 以下为响应式css语法 */
+@media screen and (max-width: 1398px){
+    header ul {
+        display: none;
+    }
+    header h1 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .菜单 {
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        border: none;
+        cursor: pointer;
+    }
+    .学校简介 {
+        flex-direction: column;
+    }
+    .学校简介 img {
+        width: 100%;
+    }
+    .学校简介区块 {
+        width: 100%;
+        padding: 40px 0;
+    }
+    .学校简介区块 h3 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 1071px){
+    header h1 {
+        display: none;
+    }
+    h4 {
+        display: block;
+    }
+    h4 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
